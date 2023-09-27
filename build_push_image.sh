@@ -7,10 +7,10 @@ docker build -t item-app:v1 .
 docker images
 
 # Mengubah nama image agar sesuai dengan format Docker Hub
-docker tag item-app:v1 testakun/item-app:v1
+docker tag item-app:v1 ghcr.io/test-akun/item-app:v1
 
 # Login ke Docker Hub
-echo $PASSWORD_DOCKER_HUB | docker login -u testakun --password-stdin
+echo $CR_PAT | docker login ghcr.io -u test-akun --password-stdin
 
 # Mengunggah image ke Docker Hub
-docker push testakun/item-app:v1
+docker push ghcr.io/test-akun/item-app:v1
