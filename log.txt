@@ -1,0 +1,41 @@
+Attaching to my_item-app_1, my_item-db_1
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=997b719c52ab
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] db version v3.6.23
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] modules: none
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] build environment:
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.651+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.652+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.652+0000 I STORAGE  [initandlisten] 
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.652+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.652+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[36mitem-app_1  |[0m 
+[33mitem-db_1   |[0m 2023-09-27T15:27:19.652+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2454M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[36mitem-app_1  |[0m > docker-software-delivery@1.0.0 start /app
+[33mitem-db_1   |[0m 2023-09-27T15:27:20.558+0000 I STORAGE  [initandlisten] WiredTiger message [1695828440:558377][1:0x7f15a4659a40], txn-recover: Main recovery loop: starting at 2/6912
+[36mitem-app_1  |[0m > node ./bin/www
+[33mitem-db_1   |[0m 2023-09-27T15:27:20.655+0000 I STORAGE  [initandlisten] WiredTiger message [1695828440:655842][1:0x7f15a4659a40], txn-recover: Recovering log 2 through 3
+[36mitem-app_1  |[0m 
+[33mitem-db_1   |[0m 2023-09-27T15:27:20.744+0000 I STORAGE  [initandlisten] WiredTiger message [1695828440:744609][1:0x7f15a4659a40], txn-recover: Recovering log 3 through 3
+[36mitem-app_1  |[0m NODE_ENV: production
+[33mitem-db_1   |[0m 2023-09-27T15:27:20.807+0000 I STORAGE  [initandlisten] WiredTiger message [1695828440:807437][1:0x7f15a4659a40], txn-recover: Set global recovery timestamp: 0
+[36mitem-app_1  |[0m Connected to database
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.139+0000 I CONTROL  [initandlisten] 
+[36mitem-app_1  |[0m [0mGET / [32m200 [0m234.863 ms - 785[0m
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.139+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+[36mitem-app_1  |[0m [0mGET /javascripts/dist/dist.min.js [36m304 [0m2.330 ms - -[0m
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.139+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+[36mitem-app_1  |[0m [0mGET /stylesheets/style.css [32m200 [0m30.448 ms - 519[0m
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.139+0000 I CONTROL  [initandlisten] 
+[36mitem-app_1  |[0m [0mGET /api [36m304 [0m8.831 ms - -[0m
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.143+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.143+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.143+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.143+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.852+0000 I NETWORK  [listener] connection accepted from 172.22.0.3:40100 #1 (1 connection now open)
+[33mitem-db_1   |[0m 2023-09-27T15:27:21.862+0000 I NETWORK  [conn1] received client metadata from 172.22.0.3:40100 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-150-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
